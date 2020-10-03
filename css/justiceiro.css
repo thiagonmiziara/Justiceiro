@@ -1,0 +1,52 @@
+.justiceiro h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    color: #6d6c6c;
+}
+
+.justiceiro h2::before {
+    content: ' ';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #6d6c6c;
+}
+
+.justiceiro p {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.justiceiro-lista {
+    height: 400px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.justiceiro-lista::-webkit-scrollbar {
+    width: 18px;
+}
+
+.justiceiro-lista::-webkit-scrollbar-thumb {
+    background: #6d6c6c;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+}
+
+.justiceiro-lista::-webkit-scrollbar-track {
+    background-color: #faf6ed;
+}
+
+.justiceiro-descricao {
+    grid-column: 3;
+}
+
+.justiceiro-descricao section {
+    margin-bottom: 3rem;
+}

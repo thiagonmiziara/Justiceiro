@@ -1,0 +1,13 @@
+.filme iframe {
+    grid-column: 2/5;
+}
+
+.filme p {
+    display: flex;
+    grid-column: 2/5;
+    text-align: justify;
+}
+
+.filme iframe {
+    width: 100%;
+}

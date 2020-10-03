@@ -1,0 +1,14 @@
+.btn-dm {
+    padding: 14px;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    position: relative;
+    border: none;
+    text-decoration: none;
+}
+
+.darkMode {
+    background: rgb(24, 23, 23);
+    color: white;
+}

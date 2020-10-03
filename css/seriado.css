@@ -1,0 +1,13 @@
+.seriado iframe {
+    grid-column: 2/5;
+}
+
+.seriado p {
+    display: flex;
+    grid-column: 2/5;
+    text-align: justify;
+}
+
+.seriado iframe {
+    width: 100%;
+}
