@@ -15,23 +15,31 @@
     <link rel="stylesheet" href="css/contato-rodape.css">
     <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#historia">História</a></li>
-            <li>
-                <a href="#filme">Filme</a></li>
-            <li>
-                <a href="#seriado">Seriado</a></li>
-            <li>
-                <a href="https://github.com/thiagonmiziara/" target="https://github.com/thiagonmiziara/">Dev  →</a>
-            </li>
-            <li><button class="btn-dm">Dark</button></li>
-        </ul>
-    </nav>
+    <button class="menu-abrir">Abre Menu</button>
+    <header class="grid-section menu">
+        <nav class="menu">
+            <button class="menu-fechar">Fecha Menu</button>
+
+            <ul class="menu-principal">
+                <li><a href="#historia">História</a></li>
+                <li>
+                    <a href="#filme">Filme</a></li>
+                <li>
+                    <a href="#serie">serie</a></li>
+                <li>
+                    <a href="https://github.com/thiagonmiziara/" target="https://github.com/thiagonmiziara/">Dev  →</a>
+                </li>
+                <li><button class="btn-dm">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="grid-section justiceiro" id="justiceiro">
         <h1 class="titulo">Justiceiro</h1>
         <ul class="justiceiro-lista">
@@ -46,7 +54,9 @@
             <p>O Justiceiro é um vigilante, que considera crimes como assassinato, sequestro e tortura aceitáveis como táticas de combate ao crime. </p>
             <p>Motivado pela morte de sua família, que foi morta pelos 906capangas do mafioso Costa, quando testemunharam uma execução proveniente de uma guerra entre gangues no Central Park, em Nova York. </p>
             <p> Justiceiro pode ser considerado um homem-guerra entre todos os criminosos em geral, conhecendo quase todo o tipo de armamento. </p>
-            <p> Os assassinos de sua família foram os primeiros a serem mortos por eles. Como veterano de guerra, Castle é um mestre em táticas furtivas e de emboscadas, bem como o manuseio de uma vasta variedade de armas.</p>
+            <p> Os assassinos de sua família foram os primeiros a serem mortos por eles. Como veterano de guerra, Castle é um mestre em táticas furtivas e de emboscadas, bem como o manuseio de uma vasta variedade de armas.</p>//// menu ha1087mburguer document.querySelector('.menu-abrir').onclick
+            = function() { document.documentElement.classList.add('menu-ativo'); }; document.querySelector('.menu-fechar').onclick = function() { document.documentElement.classList.remove('menu-ativo'); }; document.documentElement.onclick = function(event)
+            { if (event.target === document.documentElement) { document.documentElement.classList.remove('menu-ativo'); } };
         </div>
     </section>
     <section class="grid-section filme" id="filme" data-anime="right">
@@ -61,7 +71,7 @@
     </section>
 
     <section class="grid-section seriado" data-anime="left">
-        <h2 class="titulo">Seriado</h2>
+        <h2 class="titulo">Serie</h2>
         <iframe width="560 " height="315 " src="https://www.youtube.com/embed/vw0A5o5zwbw " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
 
 
@@ -73,7 +83,9 @@
         </p>
         <p>O desenvolvimento de um spin-off intitulado The Punisher começou em janeiro de 2016, antes do lançamento da segunda temporada de Demolidor. Em abril de 2016, a Marvel e a Netflix encomendaram a série, confirmando o envolvimento de Bernthal, e
             anunciando Lightfoot como produtor executivo e showrunner. As filmagens da série aconteceram em Nova Iorque. </p>
-        <p>Todos os episódios da primeira temporada foram lançados em 17 de novembro de 2017. Um mês depois, a série foi renovada para uma segunda temporada. Em 18 de fevereiro de 2019, a série foi INFELIZMENTE cancelada pela Netflix após duas temporadas.
+        <p>Todos os episódios da primeira temporada foram lançados em 17 de novembro de 2017. Um mês depois, a séri//// menu ha1087mburguer document.querySelector('.menu-abrir').onclick = function() { document.documentElement.classList.add('menu-ativo');
+            }; document.querySelector('.menu-fechar').onclick = function() { document.documentElement.classList.remove('menu-ativo'); }; document.documentElement.onclick = function(event) { if (event.target === document.documentElement) { document.documentElement.classList.remove('menu-ativo');
+            } };e foi renovada para uma segunda temporada. Em 18 de fevereiro de 2019, a série foi INFELIZMENTE cancelada pela Netflix após duas temporadas.
         </p>
     </section>
 
@@ -96,7 +108,12 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="js/darkScript.js"></script>
+    <script src="js/hamburguerScript.js"></script>
+    <script src="js/scrollScript.js"></script>
+
+
+
 </body>
 
 </html>

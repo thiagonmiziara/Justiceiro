@@ -1,8 +1,10 @@
 .menu {
-    grid-column: 1/4;
+    grid-column: 1/5;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: #222;
+    width: 100%;
+    height: 50%;
 }
 
 .menu ul {

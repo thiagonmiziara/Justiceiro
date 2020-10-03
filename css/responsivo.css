@@ -1,0 +1,146 @@
+ @media screen and (min-width: 400) {
+     body {
+         display: flex;
+         flex-direction: column;
+     }
+     .menu,
+     .grid-section,
+     .copy {
+         flex-direction: column;
+     }
+     .grid-section {
+         display: flex;
+         flex-direction: column;
+     }
+     .justiceiro-lista {
+         grid-column: 1;
+     }
+     .dados,
+     .skull {
+         grid-column: 2/3;
+     }
+     .menu {
+         margin-top: 0px;
+     }
+     .copy {
+         margin-bottom: 0px;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     body {
+         grid-template-columns: 1/4;
+     }
+     .menu,
+     .grid-section,
+     .copy {
+         grid-column: 1/5;
+     }
+     .grid-section {
+         grid-template-columns: 100px 1fr;
+         grid-gap: 10px;
+     }
+     .justiceiro-lista {
+         display: none;
+     }
+     .dados,
+     .skull {
+         grid-column: 2/3;
+     }
+     .grid-section h1 {
+         font-size: 5rem;
+     }
+     .menu {
+         margin-top: 0px;
+     }
+     .copy {
+         margin-bottom: 0px;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .menu {
+         background: #131212;
+         padding: 1em;
+         margin: 0;
+         height: 100%;
+         width: 90%;
+         max-width: 320px;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: -90%;
+         transition: left 0.3s ease-out;
+     }
+     .menu-ativo .menu {
+         left: 0;
+     }
+     .menu-principal li {
+         padding: 1eclass="hqs"m 0;
+         width: 90%;
+     }
+     .justiceiro-lista {
+         display: none;
+     }
+ }
+ 
+ @media not all and (max-width: 600px) {
+     .menu-abrir,
+     .menu-fechar {
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .menu-ativo:after {
+         content: "";
+         display: block;
+         position: fixed;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         background: rgba(0, 0, 0, 0.4);
+     }
+ }
+ 
+ .menu-abrir,
+ .menu-fechar {
+     background: none;
+     border: 0;
+     outline: 0;
+     -webkit-appearance: none;
+     font-size: 1.6em;
+     text-indent: -999em;
+ }
+ 
+ .menu-abrir {
+     height: 0;
+     width: .75em;
+     padding-top: .125em;
+     border-top: .375em double rgb(68, 68, 68);
+     border-bottom: .125em solid rgb(56, 55, 55);
+     vertical-align: middle;
+     margin: 0.5em;
+ }
+ 
+ .menu-fechar {
+     position: relative;
+     height: 1em;
+     width: 1em;
+ }
+ 
+ .menu-fechar:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-indent: 0;
+ }
+ 
+ @media (min-width: 601px) {
+     .menu-abrir,
+     .menu-fechar {
+         display: none;
+     }
+ }
