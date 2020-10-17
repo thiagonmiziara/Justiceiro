@@ -1,4 +1,7 @@
-<h1 text-aling="center">Justiceiro<img src="/img/Justiceiro-banner.jpg"></h1>
+<h1 text-aling="center">Justiceiro</h1>
+
+<img src="/img/Justiceiro-banner.jpg">
+
 <p>O projeto Justiceiro, desenvolvido para prática  das tecnologias.</p>
 
 <h1> Tecnologias</h1>
